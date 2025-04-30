@@ -35,15 +35,13 @@
         </div>
       </div>
     </section>
-    <div class="row mt-5">
-      <div class="col-12">
-        <div class="d-flex justify-content-center">
-          <div class="pagination-line">
-            <div class="pagination-item active"></div>
-            <div class="pagination-item"></div>
-            <div class="pagination-item"></div>
-            <div class="pagination-item"></div>
-          </div>
+    <div data-aos="fade-up" data-aos-duration="1200" class="col-12 mt-5">
+      <div class="d-flex justify-content-center">
+        <div class="pagination-line">
+          <div class="pagination-item active"></div>
+          <div class="pagination-item"></div>
+          <div class="pagination-item"></div>
+          <div class="pagination-item"></div>
         </div>
       </div>
     </div>
@@ -80,7 +78,7 @@
     </section>
     <section
       class="container my-5 py-4"
-      data-aos="fade-up"
+      data-aos="fade-left"
       data-aos-duration="1200"
     >
       <div class="d-flex justify-content-between align-items-center mb-4">
@@ -115,7 +113,7 @@
     ></section>
     <section
       class="container my-5 py-4"
-      data-aos="fade-up"
+      data-aos="fade-left"
       data-aos-duration="1200"
     >
       <div class="d-flex justify-content-between align-items-center mb-4">
@@ -227,7 +225,6 @@ export default {
 
     const changePage = (page) => {
       currentPage.value = page;
-      window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     onMounted(() => {
